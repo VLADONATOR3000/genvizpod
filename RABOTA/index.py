@@ -9,6 +9,30 @@ x2, y2 = 700, 350  # Конечная точка
 draw.rectangle([x1, y1, x2, y2], fill="rgb(234, 243, 250)")
 image.save("RABOTA/img(1_1).jpg")
 
+# Открываем изображение 2
+image = Image.open("slide (2).jpg")
+draw = ImageDraw.Draw(image)
+x1, y1 = 00, 000  # Начальная точка
+x2, y2 = 700, 350  # Конечная точка
+draw.rectangle([x1, y1, x2, y2], fill="rgb(254, 247, 231)")
+image.save("RABOTA/img(2_1).jpg")
+
+# Файл 3 не нуждается
+# image = Image.open("slide (3).jpg")
+# draw = ImageDraw.Draw(image)
+# x1, y1 = 50, 100  # Начальная точка
+# x2, y2 = 700, 350  # Конечная точка
+# draw.rectangle([x1, y1, x2, y2], fill="rgb(234, 243, 250)")
+# image.save("RABOTA/img(3_1).jpg")
+
+# Открываем изображение 4
+image = Image.open("slide (4).jpg")
+draw = ImageDraw.Draw(image)
+x1, y1 = 50, 100  # Начальная точка
+x2, y2 = 700, 350  # Конечная точка
+draw.rectangle([x1, y1, x2, y2], fill="white")
+image.save("RABOTA/img(4_1).jpg")
+
 
 
 
@@ -46,25 +70,25 @@ font_path = "arial.ttf"  # путь к файлу шрифта, если исп�
 text = "Текст"
 
 output_path = "RABOTA/img(1).jpg"
-image_path = "slide (1).JPG"
+image_path = "RABOTA/img(1_1).JPG"
 text_x = 60 
-text_y = 120 
+text_y = 150 
 add_text_to_image(image_path, text, output_path, font_path, text_x, text_y) # Запуск для первого фото.
 
 output_path = "RABOTA/img(2).jpg"
-image_path = "slide (2).JPG"
+image_path = "RABOTA/img(2_1).JPG"
 text_x = 60 
-text_y = 185
+text_y = 150 
 add_text_to_image(image_path, text, output_path, font_path, text_x, text_y) # Запуск для второго фото.
 
 output_path = "RABOTA/img(3).jpg"
-image_path = "slide (3).JPG"
+image_path = "RABOTA/img(3_1).JPG"
 text_x = 60 
 text_y = 150 
 add_text_to_image(image_path, text, output_path, font_path, text_x, text_y) # Запуск для третьего фото.
 
 output_path = "RABOTA/img(4).jpg"
-image_path = "slide (4).JPG"
+image_path = "RABOTA/img(4_1).JPG"
 text_x = 60 
 text_y = 150 
 add_text_to_image(image_path, text, output_path, font_path, text_x, text_y) # Запуск для четвертого фото.
